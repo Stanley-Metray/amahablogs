@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*
+{
+  font-family: 'Quicksand', sans-serif !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.content-title
+{
+  font-weight: 600;
+}
+
+#form-search
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#search
+{
+  width: 370px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+}
+
+#search:focus
+{
+  outline: none;
+}
+
+.card
+{
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+
+.card-image
+{
+  /* width: 22rem !important; */
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  height: 172px !important;
+  object-fit: cover;
+}
+
+.card
+{
+  /* white-space: nowrap; */
+  height: 350px !important;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+}
+
+.card:hover .card-title
+{
+  color: rgb(255, 174, 0);
+}
+
+.modal-dialog
+{
+  position: relative;
+  top: 50px !important;
+}
+
+.btn-close-modal
+{
+  position: relative;
+  top: -38px;
+  left: 96% !important;
+}
+
+.modal-content
+{
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+
+.modal-img
+{
+  height: 250px !important;
+  object-position: center;
+  object-fit: contain;
+  position: relative;
+  top: -30px;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
 }
