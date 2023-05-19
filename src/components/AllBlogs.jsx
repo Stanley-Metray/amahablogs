@@ -2,7 +2,7 @@ import BlogCard from "./BlogCard"
 
 const AllBlogs = (props) => {
     let searchTitle = props.searchTitle.toLowerCase();
-    const searchResult = new Array();
+    const searchResult = [];
 
     if (props.searchTitle) {
 

@@ -1,7 +1,7 @@
 
 const BlogCard = (props) => {
 
-    let description = new String(props.shortDescription);
+    let description = (props.shortDescription).toString();
     description = description.slice(0, 100);
 
     const getSlug =(e)=>{
