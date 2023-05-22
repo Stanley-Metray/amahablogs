@@ -82,11 +82,11 @@
 
 .modal-img
 {
-  height: 250px !important;
+  height: 280px !important;
   object-position: center;
-  object-fit: contain;
+  object-fit: cover;
   position: relative;
-  top: -30px;
+  top: -32px;
   border-top-left-radius: 20px !important;
   border-top-right-radius: 20px !important;
 }

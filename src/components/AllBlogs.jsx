@@ -3,6 +3,7 @@ import BlogCard from "./BlogCard"
 const AllBlogs = (props) => {
     let searchTitle = props.searchTitle.toLowerCase();
     const searchResult = [];
+    
 
     if (props.searchTitle) {
 
@@ -20,7 +21,7 @@ const AllBlogs = (props) => {
                     {
                         searchResult.map((currElement, index) => {
                             return <div key={currElement.title.toString()} className="col">
-                                <BlogCard getSlug={props.getSlug} slug={currElement.slug} thumb={currElement.thumb} title={currElement.title} shortDescription={currElement.short_description} />
+                                <BlogCard getSlug={props.getSlug} slug={currElement.slug} getCover={props.getCover} thumb={currElement.thumb} title={currElement.title} shortDescription={currElement.short_description} />
                             </div>
                         })
                     }
@@ -34,7 +35,7 @@ const AllBlogs = (props) => {
                 {
                     props.data.map((currElement, index) => {
                         return <div key={currElement.title.toString()} className="col">
-                            <BlogCard getSlug={props.getSlug} slug={currElement.slug} thumb={currElement.thumb} title={currElement.title} shortDescription={currElement.short_description} />
+                            <BlogCard getSlug={props.getSlug} slug={currElement.slug} getCover={props.getCover} thumb={currElement.thumb} title={currElement.title} shortDescription={currElement.short_description} />
                         </div>
                     })
                 }

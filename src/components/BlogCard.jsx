@@ -7,10 +7,11 @@ const BlogCard = (props) => {
     const getSlug =(e)=>{
         let temp = e.target.closest(".card");
         props.getSlug(temp.getAttribute("data-slug"));
+        props.getCover(temp.getAttribute("data-cover"));
     }
 
     return <>
-        <div className="card" onClick={getSlug} data-slug={props.slug} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <div className="card" onClick={getSlug} data-cover={props.thumb} data-slug={props.slug} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             <img src={props.thumb} className="card-img-top card-image" alt="..." />
             <div className="card-body">
                 <h5 className="card-title" style={{ fontFamily: "Quicksand", fontWeight: "600" }}>{props.title}</h5>

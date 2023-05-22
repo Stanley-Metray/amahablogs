@@ -22,7 +22,7 @@ const Blog = (props) => {
                 <div className="modal-content">
                     <button type="button" className="btn-close rounded-pill bg-dark d-block p-2 btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div className="modal-body" style={{ padding: "0px", margin: "0px" }}>
-                        <img src={blog.cover} className="card-img-top modal-img" alt="..." />
+                        <img src={props.cover} className="card-img-top modal-img" alt="..." />
                         <div className="container p-3">
                             <h5 className="card-title pt-0 pb-2" style={{ fontFamily: "Quicksand", fontWeight: "600" }}>{props.slug}</h5>
                             <p ref={bodyText} className="card-text pt-0 pb-2" style={{ fontFamily: "Quicksand", fontWeight: "500" }}></p>
